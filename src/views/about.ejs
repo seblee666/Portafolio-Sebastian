@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <%- include('partials/head') %>
+    <link rel="stylesheet" href="./css/about.css">
+</head>
+<body>
+    <%- include('partials/navigation') %>
+    <section class="about" id="about">
+        <div class="container">
+          <div class="heading">
+            <h2>Sobre Mi</h2>
+          </div>
+          <div class="content grid-container">
+            <div class="contentBx">
+              <p>
+                ¡Hola! Soy Sebastian Ramos, 
+                estudiante de Ingeniería de Sistemas e Informática
+                con una gran pasión por la tecnología y el desarrollo de software. Tengo experiencia
+                trabajando con SQL Server para la gestión de bases de datos, así como en programación
+                con JavaScript, Node.js, Java y Python. Me encanta resolver problemas a través del 
+                código, optimizar procesos y explorar nuevas tecnologías. Siempre perfeccionando mis habilidades  para mantenerme a la vanguardia.                
+              </p>
+            </div>
+            <div>
+              <img src="./img/imgabaout.jpg" alt="Image" class="img" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <%- include('partials/footer') %>
+      <script src="/js/nav.js"></script>
+</body>
+</html>

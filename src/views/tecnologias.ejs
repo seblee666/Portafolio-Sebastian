@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <%- include('partials/head') %>
+    <link rel="stylesheet" href="./css/tecnologias.css">
+</head>
+<body>
+    <%- include('partials/navigation') %>
+    <section class="services" id="services">
+        <div class="container">
+          <div class="heading">
+            <h2>Mis tecnologías usadas</h2>
+          </div>
+          <div class="content grid-container">
+            <div class="servicesBx">
+              <img src="./img/sql server.jpg" alt="Image" />
+              <h2>SQL Server</h2>
+              <p>
+                Gestión y optimización de bases de datos.
+              </p>
+            </div>
+  
+            <div class="servicesBx">
+              <img src="./img/NodeyJS.jpg" alt="Image" />
+              <h2>JavaScript & Node.js</h2>
+              <p>
+                Desarrollo backend y aplicaciones web dinámicas.
+              </p>
+            </div>
+  
+            <div class="servicesBx">
+              <img src="./img/Java.jpg" alt="Image" />
+              <h2>Java</h2>
+              <p>
+                Programación orientada a objetos y soluciones empresariales.
+              </p>
+            </div>
+  
+            <div class="servicesBx">
+              <img src="./img/python.jpg" alt="Image" />
+              <h2>Python</h2>
+              <p>
+                Análisis de datos, automatización y desarrollo versátil.
+              </p>
+            </div>
+            <div class="servicesBx">
+              <img src="./img/HTMLYCSS.jpg" alt="Image" />
+              <h2>HTML & CSS</h2>
+              <p>
+                Creación de estructuras y estilos para interfaces web atractivas y responsivas.
+              </p>
+            </div>
+        </section>
+        <%- include('partials/footer') %>
+            <script src="/js/nav.js"></script>
+</body>
+</html>
