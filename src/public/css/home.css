@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200, 300, 400, 500, 600, 700, 800, 900&display=swap");
+:root {
+  --primary: dodgerblue;
+  --light: #fff;
+  --dark: #111;
+}
+* {
+    font-family: "Poppins", sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font: 16px/1.6 "Poppins", sans-serif;
+  }
+a {
+    text-decoration: none;
+    color: var(--primary);
+  }
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.btn {
+    color: var(--light);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: var(--primary);
+  }
+section {
+    padding: 100px 0;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px;
+    z-index: 1000;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    color: var(--light);
+    background-color: #333
+  }
+  header.sticky {
+    position: fixed;
+    padding: 15px 20px;
+    background-color: #333;
+    color: var(--light);
+    -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  header.sticky a {
+    color: var(--dark);
+  }
+  header a {
+    color: var(--dark);
+  }
+  header .container {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    grid-auto-flow: column;
+    color: var(--light);
+  }
+  header .container .logo {
+    font-weight: bold;
+    font-size: 1.75em;
+    color: var(--light);
+  }
+  header .container nav a {
+    margin: 0px 15px;
+    color: var(--light);
+  }
+  .banner {
+    color: var(--dark);
+    font-weight: bolder;
+    font-size: large;
+    min-height: 100vh;
+    background: url("/img/banner.jpg");
+    background-position: 50% right;
+    background-size: cover;
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .banner .textBx {
+    padding: 3em 0;
+  }
+  .banner .textBx h2 {
+    margin: 0;
+    line-height: 1.2;
+    font-size: 2.5em;
+    font-weight: normal;
+  }
+  @media (max-width: 800px) {
+    header.sticky .container .toggle {
+      -webkit-filter: invert(1);
+              filter: invert(1);
+    }
+    header.sticky .container .menu {
+      top: 74px;
+      height: calc(100vh - 74px);
+    }
+    header .container .toggle {
+      width: 30px;
+      height: 30px;
+      background-image: url("/img/menu.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 30px;
+      cursor: pointer;
+    }
+    header .container .toggle.active {
+      background-image: url("/img/close.jpg");
+      background-size: 20px;
+    }
+    header .container .menu {
+        position: fixed;
+        width: 100%;
+        top: 99px;
+        left: 0;
+        border-top: 1px solid var(--dark);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        height: calc(100vh - 99px);
+        text-align: center;
+        background: var(--dark);
+        z-index: 1000;
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+        left: -100%;
+      }
+      header .container .menu.active {
+        left: 0;
+      }
+      header .container .menu a {
+        font-size: 1.5em;
+        margin: 10px 0;
+        display: block;
+        color: var(--light);
+      }
+    .banner {
+      text-align: center;
+      font-size: 0.6em;
+    }
+  }
+  footer {
+    text-align: center;
+    background-color: #333;
+    width: 100%;
+    padding: 10px 0;
+    position: relative;
+  }
+  
+  footer .seblee {
+    color: var(--dark);
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+    background-color: #333;
+  }
