@@ -45,6 +45,8 @@ img{
 }
 section {
     padding: 100px 0;
+    background-color: #e0edfe;
+    margin-top: 50px;
 }
 section .heading {
     text-align: center;
@@ -182,15 +184,12 @@ header .container .logo{
         }
 }
 footer {
-    margin-top: 70px;
         text-align: center;
         background-color: #333;
         width: 100%;
         padding: 10px 0;
-        margin-top: 100px;
         position: relative;
 }
-      
 footer .seblee {
         color: var(--dark);
         font-weight: bold;
